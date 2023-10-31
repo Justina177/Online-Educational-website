@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Header.css";
 import { Container } from "reactstrap";
 
 const navLinks = [
@@ -27,35 +28,38 @@ const navLinks = [
 
 const Header = () => {
   return (
-    <section>
+    <header className="header">
       <Container>
-        <div className="navgation">
+        <div className="navgation d-flex align-items-center justify-content-between">
           <div className="logo">
-            <h2>
-              <i className="ri-pentone"></i> LeTech.
+            <h2 className=" d-flex align-items-center gap-1">
+            <i class="ri-pantone-line menu"></i> LeTech.
             </h2>
           </div>
 
-          <div className="nav">
+          <div className="nav d-flex align-items-center">
             <div className="nav__menu">
-              <ul className="nal-list">
-                <li className="nav__item">
+              <ul className="nav__list">
                   {navLinks.map((item, index) => (
                     <li key={index} className="nav__item">
                       <a href={item.url}>{item.display}</a>
                     </li>
                   ))}
-                </li>
               </ul>
             </div>
             <div className="nav__right">
-              <p><i className="ri-phone-line"></i>+234 87654321</p>
+              <p className="mb-0 d-flex align-items-center gap-2"><i className="ri-phone-line menu"></i>+234 87654321</p>
             </div>
+          </div>
+          <div className="mobile__menu">
+            <span>
+              <i class="ri-menu-line"></i>
+            </span>
           </div>
         </div>
       </Container>
       
-    </section>
+    </header>
   )
 }
 
