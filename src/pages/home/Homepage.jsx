@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Header from '../../Components/Header/Header'
+import HeroSection from '../../Components/Hero-Section/HeroSection'
 
 const Homepage = () => {
   return (
-    <div>
+    <Fragment>
         <Header />
-    </div>
+        <HeroSection />
+    </Fragment>
   )
 }
 
