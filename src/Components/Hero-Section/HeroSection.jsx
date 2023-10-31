@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from "reactstrap";
 import heroImg from "../../Images/hero-img1.png";
-import './HeroSection.css';
+import "./HeroSection.css";
 
 const HeroSection = () => {
   return (
@@ -18,10 +18,7 @@ const HeroSection = () => {
                 Aut saepe voluptatum earum delectus <br /> deserunt id iste,
                 quas officiis et repellat!
               </p>
-            </div>
-            <div className="search">
-              <input type="text" placeholder="Search" />
-              <button className="btn">Search</button>
+              <button className="custom-button">Discover More</button>
             </div>
           </Col>
 
