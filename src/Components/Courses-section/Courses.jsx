@@ -4,7 +4,36 @@ import courseImg1 from "../../Images/web-design.png";
 import courseImg2 from "../../Images/8cf88ffa0dc17bff72cdfd8ecd5b1e0d0a436c04.webp";
 import courseImg3 from "../../Images/kids-learning.png"
 import "./Courses.css";
+import CourseCard from "./CourseCard";
 
+const coursesData = [
+  {
+    id: "01",
+    title: "Web Design BootCamp-2022 for Beginners",
+    lesson: 12,
+    students: 12.5,
+    rating: 5.9,
+    imgUrl: courseImg1,
+  },
+
+  {
+    id: "02",
+    title: "Professional Graphics Design, PhotoShop, Adobe XD, Figma",
+    lesson: 12,
+    students: 12.5,
+    rating: 5.9,
+    imgUrl: courseImg2,
+  },
+
+  {
+    id: "03",
+    title: "UI/UX BootCamp for Beginners in 2022",
+    lesson: 12,
+    students: 12.5,
+    rating: 5.9,
+    imgUrl: courseImg3,
+  },
+];
 
 const Courses = () => {
   return (
@@ -27,8 +56,13 @@ const Courses = () => {
               </div>
             </div>
           </Col>
+          {coursesData.map((item) => (
+            <Col lg="4" md="6" sm="6">
+              <CourseCard key={item.id} item={item} />
+            </Col>
+          ))}
           
-          <Col lg="4">
+          {/* <Col lg="4">
             <div className="single__course__item">
                 <div className="course__img">
                     <img src={courseImg1} alt="" className="w-100" />
@@ -101,7 +135,7 @@ const Courses = () => {
                     </div>
                 </div>
             </div>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </section>
