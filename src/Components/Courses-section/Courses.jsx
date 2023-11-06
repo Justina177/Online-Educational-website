@@ -27,6 +27,7 @@ const Courses = () => {
               </div>
             </div>
           </Col>
+          
           <Col lg="4">
             <div className="single__course__item">
                 <div className="course__img">
@@ -39,12 +40,12 @@ const Courses = () => {
                     </h5>
 
                     <div className="d-flex justify-content-between align-items-center">
-                        <p className="lesson d-flex align-items-center gap-1">
-                            <i className="ri-book-open-line"></i> 
-                            12 Lessons
+                        <p className="rating d-flex align-items-center gap-1">
+                            <i className="ri-star-fill"></i> 
+                            6.2k
                         </p>
-                        <p className="students d-flex align-items-center gap-1">
-                            <i className="ri-user-line"></i>
+                        <p className="enroll d-flex align-items-center gap-1">
+                            <a href="#home">Enroll Now</a>
                             12.5K
                         </p>
                     </div>
@@ -64,12 +65,12 @@ const Courses = () => {
                     </h5>
 
                     <div className="d-flex justify-content-between align-items-center">
-                        <p className="lesson d-flex align-items-center gap-1">
-                            <i className="ri-book-open-line"></i> 
-                            12 Lessons
+                        <p className="rating d-flex align-items-center gap-1">
+                            <i className="ri-star-fill"></i> 
+                            5.8K
                         </p>
-                        <p className="students d-flex align-items-center gap-1">
-                            <i className="ri-user-line"></i>
+                        <p className="enroll d-flex align-items-center gap-1">
+                            <a href="#home">Enroll Now</a>
                             12.5K
                         </p>
                     </div>
@@ -89,12 +90,12 @@ const Courses = () => {
                     </h5>
 
                     <div className="d-flex justify-content-between align-items-center">
-                        <p className="lesson d-flex align-items-center gap-1">
-                            <i className="ri-book-open-line"></i> 
-                            12 Lessons
+                        <p className="rating d-flex align-items-center gap-1">
+                            <i className="ri-star-fill"></i> 
+                            3.9k
                         </p>
-                        <p className="students d-flex align-items-center gap-1">
-                            <i className="ri-user-line"></i>
+                        <p className="enroll d-flex align-items-center gap-1">
+                            <a href="#home">Enroll Now</a>
                             12.5K
                         </p>
                     </div>
